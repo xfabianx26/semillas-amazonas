@@ -1,0 +1,30 @@
+
+		
+.cajasombra{
+        
+		background-color: #fff;
+		width: 300px;
+		padding: 10px;
+		position:relative;
+		
+		box-shadow: 0px 5px 10px  #333;
+	
+    }	
+    .cuerpo {
+        flex: 1 1 auto;
+        min-height: 1px;
+       
+        margin: 0 auto;
+        
+    } 
+.description-libro{
+    line-height: 40px;
+}
+.flechaSalida{
+    font-size: 20px;
+    background-color: #000;
+    padding: 5px;
+    color: #fff;
+    border-radius: 100%;
+    margin: 10px 0 0 10px;
+}

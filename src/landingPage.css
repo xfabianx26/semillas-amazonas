@@ -1,0 +1,59 @@
+.showcase{
+    min-height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),url('https://semillaselbosque.com.co/site/wp-content/uploads/2019/12/Semillas-Forestales-1-1800x600.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+    padding-top: 80px;
+}
+
+.showcase h1{
+    width: 40%;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+.enviarDato{
+    margin-left: 10px;
+}
+.showcase p{
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.showcase .search{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.showcase .search input, button{
+    border: 1px solid #dedede;
+    padding: 0.75rem 1rem;
+}
+
+.showcase .search button{
+    background-color: rgba(47, 47, 47,.9);
+    color: #dedede;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: 1px solid #e3e4e5;
+    
+}
+.showcase .search button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #e3e4e5;
+}
+input[type = 'text']{
+    width: 350px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    outline: none;
+}

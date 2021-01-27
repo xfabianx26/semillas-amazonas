@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  background-image: url(./images/header-nav.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 140px;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: linear-gradient(#6B941B, #BCDCFA);
+
+}
+.payPal{
+  position: relative;
+  left: 216px;
+}
+h2{
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000, 
+  3px 3px 5px rgb(0, 0, 0); 
+
+}
+nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+nav li{
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+}
+.basketColor{
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
+}
+
+li a {
+  
+  padding: 12px;
+  background-color: #fff;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px #000;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(#6B941B, #BCDCFA);
+  
+}
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+li a:hover {
+  background: #fff;
+  background: linear-gradient(70deg, black, white);
+  text-decoration: none;
+
+}
+
+.cart ion-icon{
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+}
+.cart a{
+  background-color: royalblue;
+  color: #fff;
+  text-decoration: none;
+}
+.cart-red{
+  color: rgb(179, 0, 0);
+  font-weight: bold;
+}
+.container,
+.container-products{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+ 
+}
+.image{
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+
+}
+.fotoHome{
+  height: 300px;
+  width: 300px;
+}
+.addToCart{
+  position: absolute;
+  width: 100%;
+  background-color: rgba(59, 240, 240,0.5);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  color: #000;
+  text-shadow: 1px 1px 3px #fff;
+  border-radius: 2px 2px 2px 2px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+
+}
+.image:hover .cart1,
+.image:hover .cart2,
+.image:hover .cart3,
+.image:hover .cart4{
+  bottom: 93px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+ 
+}
+/* --------cart page------------------ */
+
+.container-products{
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.container-products ion-icon{
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+.product-header{
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid  lightgray;
+  margin: 0 auto;
+}
+.product-title{
+  width: 45%;
+}
+
+.price{
+  width: 15%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+
+}
+.quantity{
+  width: 30%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+
+  
+}
+.total{
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+.product{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+ 
+}
+.product ion-icon{
+  cursor: pointer;
+
+}
+
+.products{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.products img{
+
+  width: 75px;
+}
+
+.basketTotalContainer{
+
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+.basketTotalTitle{
+  width: 30%;
+}
+
+.basketTotal{
+  width: 10%;
+}
+@media (max-width: 500px){
+  nav h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+
+  }
+  .sm-hide{
+    display: none;
+  }
+  .products,
+  .product-header{
+    justify-content: center;
+  }
+  .basketTotalContainer{
+    padding-right: 8%;
+  }
+}
+
